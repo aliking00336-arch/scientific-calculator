@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calc">
+    <div class="screen">
+      <div class="meta"><span id="mode">DEG</span><span id="memInd"></span><span id="history"></span></div>
+      <div id="expr" class="expr">0</div>
+      <div id="result" class="result"></div>
+    </div>
+
+    <div class="keys" id="keys">
+      <button class="fn" data-v="sin(">sin</button>
+      <button class="fn" data-v="cos(">cos</button>
+      <button class="fn" data-v="tan(">tan</button>
+      <button class="fn" id="modeBtn">DEG/RAD</button>
+      <button class="fn" data-v="Ans">Ans</button>
+
+      <button class="fn" data-v="asin(">sin⁻¹</button>
+      <button class="fn" data-v="acos(">cos⁻¹</button>
+      <button class="fn" data-v="atan(">tan⁻¹</button>
+      <button class="fn" data-v="π">π</button>
+      <button class="fn" data-v="e">e</button>
+
+      <button class="fn" data-v="log(">log</button>
+      <button class="fn" data-v="ln(">ln</button>
+      <button class="fn" data-v="sqrt(">√</button>
+      <button class="fn" data-v="^2">x²</button>
+      <button class="fn" data-v="^">xʸ</button>
+
+      <button class="fn" data-v="1÷(">1/x</button>
+      <button class="fn" data-v="cbrt(">∛</button>
+      <button class="fn" data-v="10^(">10ˣ</button>
+      <button class="fn" data-v="e^(">eˣ</button>
+      <button class="fn" data-v="!">n!</button>
+
+      <button class="fn" data-v="(">(</button>
+      <button class="fn" data-v=")">)</button>
+      <button class="fn" data-v="%">%</button>
+      <button class="fn" data-v="C">nCr</button>
+      <button class="fn" data-v="P">nPr</button>
+
+      <button class="mem" id="memC">MC</button>
+      <button class="mem" data-v="MR">MR</button>
+      <button class="mem" id="memP">M+</button>
+      <button class="mem" id="memM">M−</button>
+      <button class="fn" id="negBtn">±</button>
+
+      <button data-v="7">7</button>
+      <button data-v="8">8</button>
+      <button data-v="9">9</button>
+      <button class="op" data-v="÷">÷</button>
+      <button class="clr" id="del">⌫</button>
+
+      <button data-v="4">4</button>
+      <button data-v="5">5</button>
+      <button data-v="6">6</button>
+      <button class="op" data-v="×">×</button>
+      <button class="clr" id="ac">AC</button>
+
+      <button data-v="1">1</button>
+      <button data-v="2">2</button>
+      <button data-v="3">3</button>
+      <button class="op" data-v="-">−</button>
+      <button class="op" data-v="+">+</button>
+
+      <button data-v="0">0</button>
+      <button data-v=".">.</button>
+      <button class="fn" data-v="×10^">EXP</button>
+      <button class="fn" id="histBtn">History</button>
+      <button class="fn" id="themeBtn">☾</button>
+
+      <button class="eq" id="eq">=</button>
+    </div>
+
+    <section class="panel" id="panel" hidden>
+      <div id="histList"></div>
+      <button class="clr" id="clearHist">Clear history</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
